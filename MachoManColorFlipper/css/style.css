@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+  font-family: "Arimo", sans-serif;
+}
+
+.macho-container {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.macho-picture {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.macho-picture img {
+  width: 70%;
+  max-width: 600px;
+}
+
+.macho-text {
+  width: 90%;
+  max-width: 250px;
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border: 3px dotted white;
+  height: 120px;
+}
+
+.macho-text h2 {
+  font-size: 1.2em;
+}
+
+.color {
+  margin-bottom: 15px;
+}
+
+button {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 5px;
+}

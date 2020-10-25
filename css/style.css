@@ -1,0 +1,594 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Raleway", serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header area */
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: black;
+  color: white;
+  font-family: "Cinzel", serif;
+}
+
+.main-header h1 {
+  margin-left: auto;
+  font-weight: 500;
+  line-height: 100px;
+  margin: 0;
+  padding-left: 300px;
+}
+
+.main-header a {
+  color: white;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  padding-right: 300px;
+  height: auto;
+}
+
+.main-nav li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: block;
+  width: 100px;
+}
+
+.burger-nav {
+  display: none;
+}
+
+/* end of header area */
+
+/* start of hero area */
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.left-photo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("../img/portfolio-montreal-hero-1-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio-photo {
+  background-image: url("../img/jack-forge-portfolio-photo-001.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quote-section {
+  background-image: url("../img/portfolio-macbook-iphone-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-position: 10% 80%;
+}
+
+.right-photo {
+  background-image: url("../img/portfolio-toronto-hero-3-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 65% 10%;
+}
+
+.bottom-left {
+  display: none;
+}
+/* start of projects page */
+
+.hero-section-projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.projects-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  align-content: center;
+}
+
+.projects-main-text {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 10px;
+}
+
+.projects-main-text h2 {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.projects-main-text p:nth-of-type(1) {
+  background-color: white;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.left-photo-projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-edmonton-hero-1-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-photo-projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-edmonton-hero-2-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.travis-scott-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-description {
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+.travis-scott-project-image {
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.travis-scott-project-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* contact page */
+
+.hero-section-contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.contact-text {
+  width: 50%;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.contact-text h2 {
+  padding-bottom: 20px;
+}
+
+.twitter-section {
+  width: 50%;
+  max-width: 125px;
+  margin-right: 10px;
+}
+
+.twitter-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.email-section {
+  width: 50%;
+  max-width: 125px;
+  margin-left: 10px;
+}
+
+.email-section a {
+  text-decoration: none;
+  color: black;
+}
+
+.left-photo-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-montreal-hero-2-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-photo-contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-bridge-contact-1-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* about page */
+.about-container {
+  width: 50%;
+  justify-content: center;
+  margin: 20px;
+}
+
+.about-section {
+  width: 100%;
+  margin: 20px;
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-section p {
+  margin-top: 20px;
+}
+
+.hero-section-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-photo-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-vancouver-hero-1-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right-photo-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/portfolio-laptop-hero-2-medium.jpg");
+  width: 25%;
+  height: 88vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .main-header h1 {
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 50px;
+    display: block;
+    font-weight: 500;
+  }
+
+  .main-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+  }
+
+  .main-nav h1 {
+    padding-left: 30px;
+  }
+
+  .portfolio-photo {
+    background-image: url("../img/jack-forge-portfolio-photo-001.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+  }
+
+  .quote-section {
+    background-image: url("../img/portfolio-macbook-iphone-medium.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-position: 10% 80%;
+  }
+
+  .left-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url("../img/portfolio-montreal-hero-1-medium.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .right-photo {
+    background-image: url("../img/portfolio-toronto-hero-3-medium.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 10%;
+  }
+
+  .bottom-left {
+    display: inline-block;
+    background-image: url("../img/portfolio-vancouver-hero-2-medium.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-right {
+    display: inline-block;
+    background-image: url("../img/portfolio-coffee-hero-1-medium.jpg");
+    width: 33.33%;
+    height: 44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .projects-main {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: black;
+  }
+
+  .main-header {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+  }
+
+  .nav-center {
+    display: flex;
+    padding-top: 10px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+
+  .nav-center h1 {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 2em;
+    line-height: 40px;
+    height: auto;
+  }
+
+  .burger-nav {
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    display: block;
+    margin-left: auto;
+    line-height: 40px;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .main-nav a {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 1.2em;
+    padding: 15px 0 15px 0;
+  }
+
+  .main-nav {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+  }
+
+  .show-links {
+    height: 300px;
+    transition: 1s;
+  }
+
+  .main-nav a {
+    padding: 20px;
+  }
+
+  .portfolio-photo {
+    background-image: url("../img/jack-forge-portfolio-photo-001.jpg");
+    width: 50%;
+    height: 46vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10% 10%;
+  }
+
+  .quote-section {
+    background-image: url("../img/portfolio-macbook-iphone-medium.jpg");
+    width: 50%;
+    height: 46vh;
+    background-size: cover;
+    background-position: 10% 80%;
+  }
+
+  .left-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+      url("../img/portfolio-montreal-hero-1-medium.jpg");
+    width: 33.33%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  .right-photo {
+    background-image: url("../img/portfolio-toronto-hero-3-medium.jpg");
+    width: 50%;
+    height: 46vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 10%;
+  }
+
+  .bottom-left {
+    display: inline-block;
+    background-image: url("../img/portfolio-macbook-iphone-medium.jpg");
+    width: 33.33%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+  }
+
+  .bottom-right {
+    display: inline-block;
+    background-image: url("../img/portfolio-vancouver-hero-2-medium.jpg");
+    width: 50%;
+    height: 46vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /* contact page mobile */
+
+  .contact-body {
+    background-color: white;
+  }
+
+  .left-photo-contact {
+    display: none;
+  }
+  .right-photo-contact {
+    display: none;
+  }
+
+  .contact-text {
+    background-color: white;
+  }
+
+  /* projects page mobile */
+
+  .projects-body {
+    background-color: white;
+  }
+
+  .left-photo-projects {
+    display: none;
+  }
+
+  .right-photo-projects {
+    display: none;
+  }
+
+  .project-description {
+    width: 100%;
+    max-width: 500px;
+    padding-top: 0px;
+  }
+
+  .travis-scott-project-image {
+    width: 100%;
+  }
+
+  .projects-main {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .travis-scott-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
+  .projects-main-text {
+    padding-bottom: 10px;
+  }
+
+  /* about page mobile */
+
+  .about-container {
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+  }
+
+  .about-section {
+    margin: 0;
+  }
+
+  .about-section h1 {
+    margin: 0;
+  }
+
+  .left-photo-about {
+    display: none;
+  }
+
+  .right-photo-about {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+.macho-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.macho-picture {
+  width: 100%;
+}
+
+.macho-picture img {
+  width: 2100px;
+}
+
+.macho-text {
+  width: 100%;
+}
