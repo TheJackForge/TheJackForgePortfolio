@@ -22,7 +22,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -30,11 +30,11 @@ h2 {
 
 @media (max-width: 767.98px) {
   h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
