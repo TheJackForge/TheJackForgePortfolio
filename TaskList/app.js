@@ -5,8 +5,14 @@ const clear = document.querySelector('.clear');
 let list = document.querySelector('.list-ul')
 
 
+button.addEventListener('click', addItems)
+input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+        addItems();
+    }
+})
 
-button.addEventListener('click', function () {
+function addItems() {
     let inputValue = input.value;
     if (inputValue !== '') {
     let li = document.createElement('div');
@@ -27,8 +33,6 @@ button.addEventListener('click', function () {
     if (!list.classList.contains('list-populated')) {
         clear.classList.remove('d-none')
     }
-
-
 
 }  else {
    alert('Please enter an item')
@@ -61,6 +65,7 @@ list.addEventListener('click', function (e) {
 })
 
 
+
 let clearAll = document.querySelector('.clear')
 
 clearAll.addEventListener('click', function () {
@@ -69,7 +74,10 @@ clearAll.addEventListener('click', function () {
 })
 
 
-})
+}
+
+// Function AddItems() Ending
+
 
 list.addEventListener('click', function (e) {
     if (e.target.classList.contains('edit')) {
