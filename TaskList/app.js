@@ -56,12 +56,20 @@ function addItems() {
 //    alert('Please enter an item')
 // }
 
-// Remove Task Button
-list.addEventListener('click', function (e) {
-    if (e.target.classList.contains('delete')) {
-        e.target.parentElement.parentElement.remove();
-    }
+
+    // Remove Button on Created Item - Removes li in app and in localStorage
+    list.addEventListener('click', function (e) {
+        for (let i=0; i<items.length; i++) {
+        if ((e.target.classList.contains('delete') && e.target.parentElement.previousElementSibling.textContent) === items[i].inputValue) {
+            console.log('ITEM REMOVED FROM LOCAL STORAGE')
+            e.target.parentElement.parentElement.remove();
+            items.splice([i], 1)
+            // Set Updated localStorage
+            localStorage.setItem('items', JSON.stringify(items));
+        }
+    } 
 })
+
 
 function contains(e) {
     if (e.target.classList.contains('complete')) {
@@ -87,7 +95,6 @@ let clearAll = document.querySelector('.clear')
 
 clearAll.addEventListener('click', function () {
     list.innerHTML = '';
-    clear.classList.add('d-none')
     localStorage.clear();
     items.splice(0, items.length);
 })
@@ -135,17 +142,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
    
     
-    // Remove Button on Created Item - Removes li in app and in localStorage
-    list.addEventListener('click', function (e) {
-            for (let i=0; i<items.length; i++) {
-            if ((e.target.classList.contains('delete') && e.target.parentElement.previousElementSibling.textContent) === items[i].inputValue) {
-                console.log('ITEM REMOVED FROM LOCAL STORAGE')
-                items.splice([i], 1)
-                // Set Updated localStorage
-                localStorage.setItem('items', JSON.stringify(items));
-            }
-        } 
-    })
 
 
 
