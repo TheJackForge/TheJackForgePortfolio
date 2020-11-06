@@ -32,7 +32,7 @@ function addItems() {
     
    list.appendChild(li);
     li.innerHTML += `
-    <div class="row mb-1 bg-primary rounded text-light checked"><div class="col-sm my-auto checked">${inputValue}</></div><div class="col-sm checked">
+    <div class="row mb-1 bg-primary rounded text-light checked"><div class="col-sm my-auto checked item-field">${inputValue}</></div><div class="col-sm checked">
 
     <button class="btn btn-primary btn delete rounded float-right checked">Remove</button>
 
@@ -66,34 +66,11 @@ function addItems() {
     } 
 })
 
-// Complete Function
-
-// function contains(e) {
-  
-//     if (e.target.classList.contains('complete')) {
-  
-//         const nodes = e.target.parentElement.getElementsByTagName('button');
-//             for (let i=0; i<nodes.length; i++) {
-//             nodes[i].classList.remove('bg-primary', 'text-light')
-//             nodes[i].classList.add('bg-secondary', 'text-muted');
-//         }
-//         const buttonDiv = e.target.parentElement;
-//         const getRow = e.target.parentElement.parentElement;
-//         e.target.classList.remove('bg-primary', 'text-light')
-//         e.target.classList.add('bg-secondary', 'text-muted');
-//         buttonDiv.classList.remove('bg-primary')
-//         getRow.classList.remove('bg-primary', 'text-light');
-//         buttonDiv.classList.add('bg-secondary');
-//         getRow.classList.add('bg-secondary', 'text-muted');
-       
-//     }   
-// }
-
-// (e.target.classList.contains('complete') && 
 
 function contains(e) {
     for (let i=0; i<items.length; i++)
-    if (e.target.parentElement.previousElementSibling.textContent === items[i].inputValue) {
+
+    if ((e.target.parentElement.previousElementSibling.textContent === items[i].inputValue) && (e.target.classList.contains('complete'))) {
      items[i].complete = true;
      e.target.parentElement.previousElementSibling.classList.add('bg-secondary', 'text-muted')
      e.target.parentElement.classList.add('bg-secondary', 'text-muted')
@@ -107,6 +84,27 @@ function contains(e) {
     }
 }
 
+// Edit Button to Create Edit Button in Item
+
+list.addEventListener('click', function (e) {
+    const editField = e.target.parentElement.previousElementSibling;
+    for (let i=0; i<items.length; i++) {
+    if (editField.textContent === items[i].inputValue && (e.target.classList.contains('edit'))) {
+        
+        editField.textContent = '';
+        editField.innerHTML += `<input type="text" id="edit" value="${items[i].inputValue}"></input> <button class="btn btn-primary btn-sm rounded save-button">Save</button>`
+        const saveBtn = document.querySelector('.save-button');
+        const editInput = document.getElementById('edit');
+        saveBtn.addEventListener('click', function() {
+            console.log('TEST');
+            items[i].inputValue = editInput.value
+            editField.textContent = editInput.value;
+            localStorage.setItem('items', JSON.stringify(items));
+        })
+    }
+    }
+})
+
 // Button to Clear Items from list
 let clearAll = document.querySelector('.clear')
 
@@ -116,22 +114,6 @@ clearAll.addEventListener('click', function () {
     items.splice(0, items.length);
 })
 
-
-// Function AddItems() Ending
-
-list.addEventListener('click', function (e) {
-    if (e.target.classList.contains('edit')) {
-        e.target.parentElement.previousElementSibling.innerHTML = `<input type="text" class="edit-field"><button class="btn btn-primary btn-sm text-light edit-button rounded ml-2">Edit</button>`;
-    } 
-
-    
-    })
-list.addEventListener('click', function (e) {
-    if (e.target.classList.contains('edit-button')) {
-        const editField = document.querySelector('.edit-field');
-        e.target.parentElement.innerHTML = `${editField.value}`
-    }
-})
 
 window.addEventListener('DOMContentLoaded', function () {
     for (let i=0; i<items.length; i++) {
@@ -154,22 +136,19 @@ window.addEventListener('DOMContentLoaded', function () {
     li.innerHTML += `
     <div class="row mb-1 bg-secondary rounded text-muted"><div class="col-sm my-auto">${items[i].inputValue}</></div><div class="col-sm">
 
-    <button class="btn btn-secondary btn delete rounded float-right">Remove</button>
+    <button class="btn btn-secondary btn delete rounded float-right text-muted">Remove</button>
 
-    <button class="btn btn-secondary btn edit rounded float-right ">Edit</button>
+    <button class="btn btn-secondary btn edit rounded float-right text-muted">Edit</button>
     
-    <button class="btn btn-secondary btn complete rounded  float-right">Complete</button>
+    <button class="btn btn-secondary btn complete rounded float-right text-muted">Complete</button>
 
     </div></div>`
     }
     }
 
 
-    if (!list.classList.contains('list-populated')) {
-        clear.classList.remove('d-none')
-    }
-
     list.addEventListener('click', contains);
+    
 
     })
 
