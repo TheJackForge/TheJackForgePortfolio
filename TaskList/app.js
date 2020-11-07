@@ -28,13 +28,13 @@ function addItems() {
     
    list.appendChild(li);
     li.innerHTML += `
-    <div class="row mb-1 bg-primary rounded text-light checked"><div class="col-sm my-auto checked item-field">${inputValue}</></div><div class="col-sm checked">
+    <div class="row mb-1 bg-primary rounded text-light checked"><div class="col-sm my-auto item-field">${inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-primary btn delete rounded float-right checked">Remove</button>
+    <button class="btn btn-primary btn-sm btn-sm delete rounded float-right checked">Remove</button>
 
-    <button class="btn btn-primary btn edit rounded float-right checked">Edit</button>
+    <button class="btn btn-primary btn-sm btn-sm edit rounded float-right checked">Edit</button>
     
-    <button class="btn btn-primary btn complete rounded float-right checked">Complete</button>
+    <button class="btn btn-primary btn-sm btn-sm complete rounded float-right checked">Complete</button>
 
     </div></div>`
 
@@ -135,26 +135,26 @@ window.addEventListener('DOMContentLoaded', function () {
     let li = document.createElement('div');
     list.appendChild(li);
     li.innerHTML += `
-    <div class="row mb-1 bg-primary rounded text-light"><div class="col-sm my-auto item-field">${items[i].inputValue}</></div><div class="col-sm">
+    <div class="row mb-1 bg-primary rounded text-light"><div class="col-sm my-auto item-field">${items[i].inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-primary btn delete rounded  float-right">Remove</button>
+    <button class="btn btn-primary btn-sm delete rounded  float-right">Remove</button>
 
-    <button class="btn btn-primary btn edit rounded float-right ">Edit</button>
+    <button class="btn btn-primary btn-sm edit rounded float-right ">Edit</button>
     
-    <button class="btn btn-primary btn complete rounded  float-right">Complete</button>
+    <button class="btn btn-primary btn-sm complete rounded  float-right">Complete</button>
 
     </div></div>`
     } else {
     let li = document.createElement('div');
     list.appendChild(li);
     li.innerHTML += `
-    <div class="row mb-1 bg-secondary rounded text-muted"><div class="col-sm my-auto">${items[i].inputValue}</></div><div class="col-sm">
+    <div class="row mb-1 bg-secondary rounded text-muted"><div class="col-sm my-auto">${items[i].inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-secondary btn delete rounded float-right text-muted">Remove</button>
+    <button class="btn btn-secondary btn-sm delete rounded float-right text-muted">Remove</button>
 
-    <button class="btn btn-secondary btn edit rounded float-right text-muted">Edit</button>
+    <button class="btn btn-secondary btn-sm edit rounded float-right text-muted">Edit</button>
     
-    <button class="btn btn-secondary btn complete rounded float-right text-muted">Complete</button>
+    <button class="btn btn-secondary btn-sm complete rounded float-right text-muted">Complete</button>
 
     </div></div>`
     }
