@@ -123,11 +123,17 @@ list.addEventListener('click', function (e) {
 let clearAll = document.querySelector('.clear')
 
 clearAll.addEventListener('click', function () {
+    if (confirm("Are you sure you want to delete your Task List?")) {
     list.innerHTML = '';
     localStorage.clear();
     items.splice(0, items.length);
+    } 
 })
 
+// End of Clear Items Code
+
+
+// Start of Reload Code with localStorage (2 parameters linked to items[i].complete === true or false)
 
 window.addEventListener('DOMContentLoaded', function () {
     for (let i=0; i<items.length; i++) {
@@ -161,6 +167,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     list.addEventListener('click', contains);
     })
+
+    // End of Reload Code
 
 
 
