@@ -14,6 +14,8 @@ input.addEventListener('keydown', function (e) {
 })
 
 
+
+
 // Function to add items to list and to items array
 
 function addItems() {
@@ -22,9 +24,17 @@ function addItems() {
         inputValue: inputValue,
         complete: false
     }
-
-
+    
+    
+    for (let i=0; i<items.length; i++) {
+        if ( items[i].inputValue === inputValue ) {
+            alert('Item already exists');
+            input.value = ''
+            return;
+        }
+    }
     if (inputValue !== '') {
+        
     let li = document.createElement('div');
     
    list.appendChild(li);
@@ -46,6 +56,7 @@ function addItems() {
         items.push(item);
         // Push inputValue (item) to local Storage
         localStorage.setItem('items', JSON.stringify(items));
+    
 }  
 }
 
