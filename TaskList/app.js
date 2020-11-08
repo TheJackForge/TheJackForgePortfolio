@@ -82,13 +82,15 @@ function contains(e) {
 
             console.log(completeNode.textContent);
             console.log(items[i].inputValue)
-            completeButton.classList.toggle('btn-primary')    
-            editButton.classList.toggle('btn-primary')   
+            completeButton.classList.toggle('btn-primary') 
+            completeButton.classList.toggle('text-muted')   
+            editButton.classList.toggle('btn-primary')
+            editButton.classList.toggle('text-muted')  
             removeButton.classList.toggle('btn-primary')
+            removeButton.classList.toggle('text-muted') 
             rowDiv.classList.toggle('bg-primary')
-            rowDiv.classList.toggle('bg-secondary')
-            rowDiv.classList.toggle('text-light')
             rowDiv.classList.toggle('text-muted')
+            rowDiv.classList.toggle('text-light')
             
             completeNode.classList.remove('COMPLETE')
             if (removeButton.classList.contains('btn-primary')) {
@@ -162,7 +164,7 @@ window.addEventListener('DOMContentLoaded', function () {
     li.innerHTML += `
     <div class="row mb-2 bg-primary rounded text-light"><div class="col-sm my-auto item-field">${items[i].inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-primary btn-sm delete rounded  float-right">Remove</button>
+    <button class="btn btn-primary btn-sm delete rounded float-right">Remove</button>
 
     <button class="btn btn-primary btn-sm edit rounded float-right ">Edit</button>
     
@@ -175,11 +177,11 @@ window.addEventListener('DOMContentLoaded', function () {
     li.innerHTML += `
     <div class="row mb-2 bg-secondary rounded text-muted"><div class="col-sm my-auto item-field">${items[i].inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-sm delete rounded float-right">Remove</button>
+    <button class="btn btn-sm delete rounded float-right text-muted">Remove</button>
 
-    <button class="btn btn-sm edit rounded float-right">Edit</button>
+    <button class="btn btn-sm edit rounded float-right text-muted">Edit</button>
     
-    <button class="btn btn-sm complete rounded float-right">Complete</button>
+    <button class="btn btn-sm complete rounded float-right text-muted">Complete</button>
 
     </div></div>`
     }
