@@ -23,6 +23,7 @@ function addItems() {
         complete: false
     }
 
+
     if (inputValue !== '') {
     let li = document.createElement('div');
     
@@ -77,7 +78,6 @@ function contains(e) {
             const completeButton = e.target;
             const editButton = e.target.previousElementSibling;
             const removeButton = e.target.previousElementSibling.previousElementSibling;
-            // const buttonDiv = e.target.parentElement;
             const rowDiv = e.target.parentElement.parentElement
 
             console.log(completeNode.textContent);
@@ -87,6 +87,9 @@ function contains(e) {
             removeButton.classList.toggle('btn-primary')
             rowDiv.classList.toggle('bg-primary')
             rowDiv.classList.toggle('bg-secondary')
+            rowDiv.classList.toggle('text-light')
+            rowDiv.classList.toggle('text-muted')
+            
             completeNode.classList.remove('COMPLETE')
             if (removeButton.classList.contains('btn-primary')) {
                 items[i].complete = false;
@@ -172,11 +175,11 @@ window.addEventListener('DOMContentLoaded', function () {
     li.innerHTML += `
     <div class="row mb-2 bg-secondary rounded text-muted"><div class="col-sm my-auto item-field">${items[i].inputValue}</></div><div class="col-sm button-field">
 
-    <button class="btn btn-sm delete rounded float-right text-muted">Remove</button>
+    <button class="btn btn-sm delete rounded float-right">Remove</button>
 
-    <button class="btn btn-sm edit rounded float-right text-muted">Edit</button>
+    <button class="btn btn-sm edit rounded float-right">Edit</button>
     
-    <button class="btn btn-sm complete rounded float-right text-muted">Complete</button>
+    <button class="btn btn-sm complete rounded float-right">Complete</button>
 
     </div></div>`
     }
