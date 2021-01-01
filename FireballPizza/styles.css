@@ -99,7 +99,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 70px;
     width: 100%;
     border-bottom: 1px solid #383838;
     z-index: -1;
@@ -128,7 +128,7 @@ a {
 }
 
 .floating-nav-list a {
-    padding: 0 10px;
+    padding: 20px 10px;
     font-weight: 600;
     transition: background-color 1s ease;
 }
@@ -139,7 +139,7 @@ a {
 
 .floating-nav-list a:hover {
     background-color: rgb(148, 148, 148);
-    padding: 0 10px;
+    padding: 20px 10px;
     color: white;
 }
 
