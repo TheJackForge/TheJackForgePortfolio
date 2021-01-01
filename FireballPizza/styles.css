@@ -203,7 +203,7 @@ a {
 .showcase-container-1 {
     width: 100%;
     height: 300px;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/showcase-photo-4-pizza.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/showcase-photo-4-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 70%;
@@ -231,7 +231,7 @@ a {
 .pizza-menu-image {
     display: none;
     width: 40%;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-2-pizza.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-2-pizza.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -340,7 +340,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-salad-004.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-salad-004.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -387,7 +387,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-appetizers-001.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-appetizers-001.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
@@ -431,7 +431,7 @@ a {
     height: 300px;
     width: 100%;
     background-color: #1a1a1a;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-burgers-sandwiches-001.jpg');
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('img/menu-photo-burgers-sandwiches-001.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 50%;
@@ -560,7 +560,7 @@ a {
     padding-top: 1.3rem;
     width: 50%;
     height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-2-for-1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-2-for-1.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -595,7 +595,7 @@ a {
     padding-top: 1.3rem;
     width: 50%;
     height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-02-drinks.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-02-drinks.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -642,7 +642,7 @@ a {
     padding-top: 1.3rem;
     width: 50%;
     height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-002-nachos.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-002-nachos.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
@@ -678,7 +678,7 @@ a {
     padding-top: 1.3rem;
     width: 50%;
     height: 150px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-01-date-night.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-01-date-night.jpg');
     background-size: cover;
     background-position: 50% 50%;
     color: var(--primary-color);
