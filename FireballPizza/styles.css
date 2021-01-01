@@ -535,6 +535,7 @@ a {
 .specials-container-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 3rem;
     height: 150px;
     width: 100%;
@@ -542,7 +543,6 @@ a {
 
 .specials-container-header p {
     color: var(--primary-color);
-    margin-left: 2rem;
 }
 
 
@@ -1181,6 +1181,15 @@ a {
     .special-1-container {
         padding-top: 3rem;
         height: 250px;
+    }
+
+    .specials-container-header {
+        justify-content: flex-start;
+    }
+    
+    .specials-container-header p {
+        color: var(--primary-color);
+        margin-left: 3rem;
     }
     
     .special-1-container p:nth-of-type(1) {
