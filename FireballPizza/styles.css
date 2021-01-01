@@ -71,7 +71,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 100px;
 }
 
 .mobile-home-nav-list {
@@ -85,7 +85,7 @@ a {
 .mobile-home-nav-list a {
     font-size: 0.6rem;
     color: var(--secondary-color);
-    padding: 0 10px;
+    padding: 10px 10px;
     font-weight: 600;
 }
 
@@ -447,7 +447,7 @@ a {
 }
 
 .sandwich-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
 }
 
