@@ -1,0 +1,1615 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #f5f5f5;
+    --secondary-color: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    width: 100%;
+    height: 250px;
+    background-color: #1a1a1a;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+}
+
+.nav-list {
+    width: 100%;
+    list-style-type: none;
+    margin-top: 3rem;
+    display: none;
+}
+
+.nav-list a {
+    font-size: 0.6rem;
+    opacity: 0.4;
+    transition: opacity 1s ease;
+}
+
+.nav-list a:last-child {
+    background-color: red;
+}
+
+.nav-list a:hover {
+    background-color: rgb(77, 77, 80);
+    opacity: 0.7;
+}
+
+.nav-list a:hover:last-child {
+    background-color: red;
+}
+
+.mobile-home-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.mobile-home-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+
+.mobile-home-nav-list a {
+    font-size: 0.6rem;
+    color: var(--secondary-color);
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.mobile-home-nav-list a:last-child {
+    background-color: rgb(255, 88, 88);
+}
+
+.floating-nav-bar {
+    background-color: var(--primary-color);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #383838;
+    z-index: -1;
+    top: 0;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.floating-nav-bar.active { 
+    opacity: 1;
+    z-index: 1;
+}
+
+.floating-nav-bar li {
+    color: var(--secondary-color);
+    font-size: 0.5rem;
+}
+
+.floating-nav-list {
+    list-style-type: none;
+    display: flex;
+}
+
+.welcome-nav {
+    display: none;
+}
+
+.floating-nav-list a {
+    padding: 0 10px;
+    font-weight: 600;
+    transition: background-color 1s ease;
+}
+
+.floating-nav-list a:last-child {
+    opacity: 1;
+}
+
+.floating-nav-list a:hover {
+    background-color: rgb(148, 148, 148);
+    padding: 0 10px;
+    color: white;
+}
+
+.floating-nav-list a:last-child {
+    background-color: rgb(255, 88, 88);
+}
+
+.floating-nav-list a:hover:last-child {
+    background-color: rgb(255, 0, 0);
+    opacity: 1;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    display: flex;
+    color:  #f5f5f5;
+}
+
+.header-logo h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 300;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.information-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.story-section {
+    width: 80%;
+    color:  #1a1a1a;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.story-section-2 {
+    width: 80%;
+    color: rgb(37, 37, 37);
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    color:  #1a1a1a;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.showcase-container-1 {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/showcase-photo-4-pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.nav-divider {
+    height: 90%;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pizza-menu {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.pizza-menu-image {
+    display: none;
+    width: 40%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-2-pizza.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pizza-menu-items {
+    width: 95%;
+}
+
+.pizza-menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    margin: 3rem;
+}
+
+.pizza-menu-header p {
+    font-size: 0.8rem;
+}
+
+.pizza-menu-header p:nth-of-type(1) {
+    font-size: 1.2rem;
+}
+
+.pizza-menu-header p:nth-of-type(2) {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.pizza-menu-header p:nth-of-type(3) {
+    margin-top: 1rem;
+    line-height: 2;
+    max-width: 90%;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.menu-item {
+    width: 90%;
+    margin: 20px;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.type-price-div {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.type-price-div p {
+    font-size: 1rem;
+}
+
+.size-pricing {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1rem;
+}
+
+.pizza-item-ingredients {
+    font-size: 0.5rem;
+    max-width: 70%;
+}
+
+.divider-space-2 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: var(--primary-color);
+    background-color:var(--primary-color);
+    font-size: 3rem;
+}
+
+.other-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+.salad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-bottom: 2rem;
+}
+
+.salad-image-header {
+    height: 300px;
+    width: 100%;
+    background-color: #1a1a1a;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-salad-004.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    margin-bottom: 2rem;
+}
+
+.salad-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.salad-items-container {
+    width: 80%;
+}
+
+.salad-item {
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 20px 0;
+    padding-bottom: 0.5rem;
+}
+
+.salad-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.salad-item-ingredients p {
+    font-size: 0.5rem;
+    max-width: 70%;
+}
+
+.appetizer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    background-color: var(--primary-color);
+    padding-bottom: 2rem;
+}
+
+.appetizer-image-header {
+    height: 300px;
+    width: 100%;
+    background-color: #1a1a1a;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-appetizers-001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    margin-bottom: 2rem;
+}
+
+.appetizer-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.appetizer-items-container {
+    width: 80%;
+}
+
+.appetizer-item {
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 20px 0;
+    padding-bottom: 0.5rem;
+}
+
+.appetizer-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.appetizer-item-ingredients p {
+    font-size: 0.5rem;
+    max-width: 70%;
+}
+
+.other-items-container-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sandwich-image-header {
+    height: 300px;
+    width: 100%;
+    background-color: #1a1a1a;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) ), url('/img/menu-photo-burgers-sandwiches-001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+}
+
+.sandwich-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 2rem 0 2rem 0;
+}
+
+.sandwich-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.sandwich-items-container {
+    width: 80%;
+}
+
+.sandwich-item {
+    border-bottom: 1px solid var(--secondary-color);
+    margin: 20px 0px;
+    padding-bottom: 0.5rem;
+}
+
+.sandwich-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.sandwich-item-ingredients p {
+    font-size: 0.5rem;
+    max-width: 70%;
+}
+
+.other-items-container-2 {
+    width: 100%;
+}
+
+.kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #053114;
+    color: var(--primary-color);
+    padding: 2rem 0 2rem 0;
+}
+
+.kids-menu-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kids-menu-header p:nth-of-type(1) {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.kids-menu-header p:nth-of-type(2) {
+    text-align: center;
+    line-height: 2;
+    max-width: 60%;
+    font-size: 0.6rem;
+}
+
+.kids-items-container {
+    width: 80%;
+}
+
+.kids-item {
+    border-bottom: 1px solid var(--primary-color);
+    margin: 20px 0;
+    padding-bottom: 0.5rem;
+}
+
+.kids-pricing {
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    font-size: 1.2rem;
+}
+
+.kids-item-ingredients p {
+    font-size: 0.5rem;
+    max-width: 70%;
+}
+
+.specials-container {
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.specials-container-header {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    height: 150px;
+    width: 100%;
+}
+
+.specials-container-header p {
+    color: var(--primary-color);
+    margin-left: 2rem;
+}
+
+
+.current-specials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.special-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.3rem;
+    width: 50%;
+    height: 150px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-2-for-1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-1-container p {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    text-align: center;
+}
+
+.special-1-container p:nth-of-type(1) {
+    font-size: 1rem;
+}
+
+.special-1-container p:nth-of-type(2) {
+    font-size: 0.6rem;
+    text-align: center;
+}
+
+.special-1-container p:nth-of-type(3) {
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.special-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.3rem;
+    width: 50%;
+    height: 150px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-02-drinks.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-2-container p {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.special-2-container p:nth-of-type(1) {
+    font-size: 1rem;
+}
+
+.special-2-container p:nth-of-type(2) {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.special-2-container p:nth-of-type(3) {
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.special-2-container p:nth-of-type(4) {
+    font-size: 0.3rem;
+    text-align: center;
+}
+
+.special-2-container p:nth-of-type(5) {
+    font-size: 0.3rem;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.special-3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.3rem;
+    width: 50%;
+    height: 150px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-002-nachos.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-3-container p {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.special-3-container p:nth-of-type(1) {
+    font-size: 1rem;
+}
+
+.special-3-container p:nth-of-type(2) {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.special-3-container p:nth-of-type(3) {
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.special-4-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.3rem;
+    width: 50%;
+    height: 150px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('/img/specials-photo-01-date-night.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: var(--primary-color);
+}
+
+.special-4-container p {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.special-4-container p:nth-of-type(1) {
+    font-size: 1rem;
+}
+
+.special-4-container p:nth-of-type(2) {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.special-4-container p:nth-of-type(3) {
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.divider-line {
+    height: 1px;
+    background-color: var(--primary-color);
+    width: 15%;
+    margin: 1rem 0;
+}
+
+.fireball-pizza-takeout-delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    font-size: 3rem;
+    padding: 3rem 0 5rem 0;
+}
+
+.fireball-pizza-takeout-delivery-container p {
+    margin-bottom: 0.5rem;
+}
+
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.reservations-takeout-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
+}
+
+.reservations-takeout-btn:hover {
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.reservations-takeout-btn:active {
+    transform: scale(0.995);
+}
+
+.uber-eats-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: #3FC060;
+    background-color: #162328;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
+}
+
+.uber-eats-btn:hover {
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.uber-eats-btn:active {
+    transform: scale(0.995);
+}
+
+.skip-the-dishes-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: #F36D00;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
+}
+
+.skip-the-dishes-btn:hover {
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.skip-the-dishes-btn:active {
+    transform: scale(0.995);
+}
+
+.doordash-btn {
+    border: none;
+    background: none;
+    width: 90%;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: #FF3008;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+    transition: box-shadow .3s;
+    outline: none;
+}
+
+.doordash-btn:hover {
+    box-shadow: 0 0 8px rgba(20,20,20,0.8);
+}
+
+.doordash-btn:active {
+    transform: scale(0.995);
+}
+
+.fireball-pizza-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.fireball-pizza-hours {
+    width: 100%;
+    text-align: center;
+}
+
+.fireball-pizza-hours-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.fireball-pizza-hours-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    text-align: left;
+}
+
+.fireball-pizza-hours-content p {
+    font-weight: 400;
+}
+
+.fireball-pizza-address {
+    width: 90%;
+    text-align: center;
+}
+
+.fireball-pizza-address-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.fireball-pizza-address-content {
+    display: inline-block;
+    text-align: left;
+    color: var(--primary-color);
+    font-size: 0.8rem;
+}
+
+.fireball-pizza-address-content p {
+    font-weight: 400;
+}
+
+.fireball-pizza-address-content p:nth-of-type(1) {
+    font-weight: 600;
+}
+
+.fireball-pizza-address-content p:nth-of-type(4) {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.fireball-pizza-contact {
+    width: 90%;
+    text-align: center;
+}
+
+.fireball-pizza-contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.fireball-pizza-contact-content {
+    display: inline-block;
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.fireball-pizza-contact-content p {
+    font-weight: 400;
+}
+
+.contact-bold {
+    font-weight: 600;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .mobile-home-nav-list a {
+        font-size: 0.8rem;
+        color: var(--secondary-color);
+        padding: 0 20px;
+        font-weight: 600;
+    }
+
+    .floating-nav-list li {
+        font-size: 0.8rem;
+        color: var(--secondary-color);
+        padding: 0 10px;
+        font-weight: 600;
+    }
+
+    .header-logo h1 {
+        font-size: 3.8rem;
+    }
+
+    .story-section {
+        width: 70%;
+    }
+
+    .story-section-2 {
+        width: 70%;      
+    }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        font-size: 1rem;
+    }
+
+    .fireball-pizza-address-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-address-content {
+        font-size: 1rem;
+    }
+
+    .fireball-pizza-contact-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-contact-content {
+        font-size: 1rem;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .mobile-home-nav {
+        display: none;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        height: 300px;
+        display: flex;
+        color:  #f5f5f5;
+    }
+    
+    .header-logo h1 {
+        font-size: 4rem;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .floating-nav-bar {
+        background-color: var(--primary-color);
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70px;
+        width: 100%;
+        border-bottom: 1px solid #383838;
+        z-index: -1;
+        top: 0;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .floating-nav-bar.active { 
+        opacity: 1;
+        z-index: 1;
+    }
+    
+    .floating-nav-bar li {
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+    }
+    
+    .floating-nav-list {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    
+    .floating-nav-list a {
+        padding: 0 20px;
+        opacity: 1;
+        font-weight: 600;
+        transition: background-color 1s ease;
+    }
+    
+    .floating-nav-list a:last-child {
+        opacity: 1;
+    }
+    
+    .floating-nav-list a:hover {
+        /* background-color: rgb(77, 77, 80); */
+        padding: 0 20px;
+        opacity: 1;
+        color: white;
+    }
+
+    .floating-nav-list a:last-child {
+        background-color: rgb(255, 88, 88);
+    }
+    
+    .floating-nav-list a:hover:last-child {
+        background-color: rgb(255, 0, 0);
+        opacity: 1;
+    }
+    
+    .header {
+        height: 500px;
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        font-size: 0.8rem;
+        /* margin: 0 2rem; */
+        padding: 0 20px;
+    }
+
+    .header-logo h1 {
+        font-size: 5rem;
+    }
+
+    .information-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .story-section {
+        width: 35%;
+        font-size: 2.2rem;
+        margin-right: 1rem;
+    }
+
+    .story-section-2 {
+        width: 45%;      
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .showcase-container-1 {
+        height: 500px;
+    }
+    
+
+    .pizza-menu-header p:nth-of-type(3) {
+        max-width: 60%;
+        font-size: 0.6rem;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin: 20px;
+    }
+    
+    .type-price-div p {
+        font-size: 1.5rem;
+    }
+    
+    .size-pricing {
+        font-size: 1.5rem;
+    }
+
+    .pizza-menu-header p:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+    
+    .pizza-item-ingredients {
+        font-size: 0.8rem;
+    }
+
+    .appetizer-image-header {
+        height: 500px;
+    }
+
+    .appetizer-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
+    .salad-image-header {
+        height: 500px;
+    }
+    
+    .salad-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
+    .sandwich-image-header {
+        height: 500px;
+    }
+
+    .sandwich-pricing {
+        font-size: 1.5rem;
+    }
+
+    .sandwich-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
+    .kids-pricing {
+        font-size: 1.5rem;
+    }
+
+    .kids-item-ingredients p {
+        font-size: 0.8rem;
+    }
+
+    .special-1-container {
+        padding-top: 3rem;
+        height: 250px;
+    }
+    
+    .special-1-container p:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+    
+    .special-1-container p:nth-of-type(2) {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .special-1-container p:nth-of-type(3) {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .special-2-container {
+        padding-top: 3rem;
+        height: 250px;
+    }
+    
+    .special-2-container p:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+    
+    .special-2-container p:nth-of-type(2) {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .special-2-container p:nth-of-type(3) {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .special-2-container p:nth-of-type(4) {
+        font-size: 0.6rem;
+    }
+    
+    .special-2-container p:nth-of-type(5) {
+        font-size: 0.6rem;
+    }
+
+    .special-3-container {
+        padding-top: 3rem;
+        height: 250px;
+    }
+    
+    .special-3-container p:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+    
+    .special-3-container p:nth-of-type(2) {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .special-3-container p:nth-of-type(3) {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .special-4-container {
+        padding-top: 3rem;
+        height: 250px;
+    }
+    
+    .special-4-container p:nth-of-type(1) {
+        font-size: 1.8rem;
+    }
+    
+    .special-4-container p:nth-of-type(2) {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .special-4-container p:nth-of-type(3) {
+        font-size: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .fireball-pizza-information {
+        display: flex;
+        justify-content: flex-start;
+        height: 400px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        padding-left: 4rem;
+    }
+    
+    .fireball-pizza-hours {
+        width: 28%;
+        text-align: left;
+    }
+
+    .fireball-pizza-hours-header {
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        display: inline-block;
+        font-size: 0.3rem;
+    }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        font-size: 0.7rem;
+    }
+    
+    .fireball-pizza-address {
+        width: 28%;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    
+    .fireball-pizza-address-header {
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+    
+    .fireball-pizza-address-content {
+        display: inline-block;
+        font-size: 0.7rem;
+    }
+    
+    .fireball-pizza-address-content p {
+        font-weight: 400;
+    }
+    
+    .fireball-pizza-address-content p:nth-of-type(1) {
+        font-weight: 600;
+    }
+    
+    .fireball-pizza-address-content p:nth-of-type(4) {
+        margin-top: 2rem;
+        font-weight: 600;
+    }
+    
+    .fireball-pizza-contact {
+        width: 28%;
+        text-align: left;
+        margin-left: 3rem;
+    }
+    
+    .fireball-pizza-contact-header {
+        justify-content: flex-start;
+        font-size: 1rem;
+    }
+    
+    .fireball-pizza-contact-content {
+        font-size: 0.7rem;
+    }
+    
+    .fireball-pizza-contact-content p {
+        font-weight: 400;
+    }
+    
+    .fireball-pizza-contact-content p:nth-of-type(2) {
+        margin-top: 1rem;
+    }
+    
+    .fireball-pizza-contact-content p:nth-of-type(3) {
+        margin-top: 1rem;
+    }
+    
+    .contact-bold {
+        font-weight: 600;
+    }
+    
+    .contact-email-sizing {
+        font-size: 0.9rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .nav-list li {
+        font-size: 1rem;
+    }
+
+    .header-logo h1 {
+        font-size: 7.2rem;
+    }
+    
+    .floating-nav-bar li {
+        font-size: 1rem;
+    }
+    
+    .floating-nav-list a {
+        padding: 0 20px;
+    }
+    
+    .floating-nav-list a:hover {
+        padding: 0 20px;
+    }
+
+    .story-section {
+        margin-right: 2rem;
+        font-size: 2.4rem;
+    }
+
+    .story-section-2 {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+    }
+
+
+    .pizza-menu-image {
+        display: flex;
+    }
+
+    .pizza-menu-items {
+        width: 70%;
+    }
+
+    .pizza-menu-header p:nth-of-type(3) {
+        max-width: 55%;
+        font-size: 0.7rem;
+    }
+
+    .other-items-container {
+        flex-direction: row;
+    }
+
+    .appetizer-container {
+        width: 50%;
+    }
+
+    .salad-container {
+        width: 50%;   
+    }
+
+    .other-items-container-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sandwich-container {
+        width:50%;    
+    }
+
+    .kids-container {
+        width:50%;
+    }
+
+    .specials-container-header {   
+        font-size: 5rem; 
+    }
+
+    .special-1-container {
+        width: 25%;
+        height: 300px;
+        padding-top: 4rem;
+    }
+
+    .special-2-container {
+        width: 25%;
+        height: 300px;
+        padding-top: 4rem;
+    }
+
+    .special-3-container {
+        width: 25%;
+        height: 300px;
+        padding-top: 4rem;
+    }
+
+    .special-4-container {
+        width: 25%;
+        height: 300px;
+        padding-top: 4rem;
+    }
+
+    .reservations-takeout-btn {
+        width: 70%;
+    }
+    
+    .uber-eats-btn {
+        width: 70%;
+    }
+    
+    .skip-the-dishes-btn {
+        width: 70%;
+    }
+    
+    .doordash-btn {
+        width: 70%;
+    }
+
+    .fireball-pizza-hours {
+        width: 25%;
+    }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1.4rem;
+    } 
+    
+    .fireball-pizza-hours-content {
+        font-size: 0.8rem;
+    }
+    
+    .fireball-pizza-address {
+        width: 20%;
+    }
+    
+    .fireball-pizza-address-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-address-content {
+
+        font-size: 0.8rem;
+    }
+    
+    .fireball-pizza-contact {
+        width: 20%;
+    }
+    
+    .fireball-pizza-contact-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-contact-content {
+        font-size: 0.8rem;
+    }
+    
+    .fireball-pizza-contact-content p {
+        font-weight: 400;
+    }
+    
+    .fireball-pizza-contact-content p:nth-of-type(2) {
+        margin-top: 1rem;
+    }
+    
+    .fireball-pizza-contact-content p:nth-of-type(3) {
+        margin-top: 1rem;
+    }
+    
+    .contact-bold {
+        font-weight: 600;
+    }
+    
+    .contact-email-sizing {
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .nav-list li {
+        font-size: 1.7rem;
+    }
+
+    .header-logo h1 {
+        font-size: 8rem;
+    }
+
+    .floating-nav-bar li {
+        font-size: 1.2rem;
+    }
+    
+    .floating-nav-list a {
+        padding: 0 30px;
+    }
+    
+    .floating-nav-list a:hover {
+        padding: 0 30px;
+    }
+
+    .story-section {
+        width: 20%;
+        font-size: 2.4rem;
+    }
+
+    .story-section-2 {
+        width: 30%;      
+        font-size: 1.2rem;
+    }
+
+    .pizza-menu-items {
+        width: 60%;
+    }
+
+    .reservations-takeout-btn {
+        width: 50%;
+    }
+    
+    .uber-eats-btn {
+        width: 50%;
+    }
+    
+    .skip-the-dishes-btn {
+        width: 50%;
+    }
+    
+    .doordash-btn {
+        width: 50%;
+    }
+    
+    .fireball-pizza-hours {
+        width: 20%;
+    }
+    
+    .fireball-pizza-hours-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-hours-content {
+        font-size: 1rem;
+    } */
+    
+    .fireball-pizza-address {
+        width: 20%;
+    }
+    
+    .fireball-pizza-address-header {
+        font-size: 1.4rem;
+    }
+    
+    .fireball-pizza-address-content {
+        font-size: 1rem;
+    }
+    .fireball-pizza-contact {
+        width: 20%;
+    } 
+}
