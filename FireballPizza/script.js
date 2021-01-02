@@ -289,7 +289,7 @@ function populateSandwichMenu() {
         let sandwichItem = document.createElement('div');
         sandwichItem.classList.add('sandwich-item');
         sandwichItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="sandwich-type-price-div">
             <p>${sandwich.type}</p>
             <div class="sandwich-pricing">
             <span>${sandwich.price}</span>

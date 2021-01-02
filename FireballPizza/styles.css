@@ -178,25 +178,25 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
+    padding: 4rem 0;
 }
 
 .story-section {
     width: 80%;
     color:  #1a1a1a;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     font-family: 'Montserrat';
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
 .story-section-2 {
     width: 80%;
     color: rgb(37, 37, 37);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: sans-serif;
     color:  #1a1a1a;
-    font-weight: 300;
+    font-weight: 500;
     font-family: inherit;
 }
 
@@ -254,7 +254,7 @@ a {
 }
 
 .pizza-menu-header p:nth-of-type(1) {
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
     width: 100%;
     font-weight: 600;
@@ -356,9 +356,10 @@ a {
 }
 
 .salad-menu-header p:nth-of-type(1) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 1rem 0;
     font-weight: 600;
+    text-align: center;
 }
 
 .salad-items-container {
@@ -416,9 +417,10 @@ a {
 }
 
 .appetizer-menu-header p:nth-of-type(1) {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     margin: 1rem 0;
+    text-align: center;
 }
 
 .appetizer-items-container {
@@ -481,12 +483,14 @@ a {
 }
 
 .sandwich-menu-header p:nth-of-type(1) {
-    font-size: 1.3rem;
+    text-align: center;
+    font-size: 2rem;
     margin: 1rem 0;
+    font-weight: 600;
 }
 
 .sandwich-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .sandwich-item {
@@ -495,16 +499,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.sandwich-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sandwich-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .sandwich-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .sandwich-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .other-items-container-2 {
