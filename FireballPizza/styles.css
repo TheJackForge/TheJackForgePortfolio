@@ -188,6 +188,7 @@ a {
     font-family: 'Montserrat';
     font-weight: 500;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .story-section-2 {
@@ -198,6 +199,8 @@ a {
     color:  #1a1a1a;
     font-weight: 500;
     font-family: inherit;
+    text-align: center;
+    margin-top: 0.5rem;
 }
 
 .showcase-container-1 {
@@ -1153,12 +1156,15 @@ a {
         width: 35%;
         font-size: 2.2rem;
         margin-right: 1rem;
+        text-align: left;
     }
 
     .story-section-2 {
         width: 45%;      
         font-size: 1rem;
         margin-left: 1rem;
+        margin-top: 0;
+        text-align: left;
     }
 
     .showcase-container-1 {
