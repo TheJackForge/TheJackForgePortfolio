@@ -251,7 +251,7 @@ function populateSaladMenu() {
         let saladItem = document.createElement('div');
         saladItem.classList.add('salad-item');
         saladItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="salad-type-price-div">
             <p>${salad.type}</p>
             <div class="salad-pricing">
             <span>${salad.price}</span>
@@ -270,7 +270,7 @@ function populateAppetizerMenu() {
         let appetizerItem = document.createElement('div');
         appetizerItem.classList.add('appetizer-item');
         appetizerItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="appetizer-type-price-div">
             <p>${appetizer.type}</p>
             <div class="appetizer-pricing">
             <span>${appetizer.price}</span>

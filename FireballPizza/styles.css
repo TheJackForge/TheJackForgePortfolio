@@ -293,11 +293,11 @@ a {
 .type-price-div {
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
 }
 
 .type-price-div p {
     font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .size-pricing {
@@ -356,12 +356,13 @@ a {
 }
 
 .salad-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin: 1rem 0;
+    font-weight: 600;
 }
 
 .salad-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .salad-item {
@@ -370,16 +371,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.salad-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.salad-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .salad-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .salad-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .appetizer-container {
@@ -403,12 +416,13 @@ a {
 }
 
 .appetizer-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     margin: 1rem 0;
 }
 
 .appetizer-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .appetizer-item {
@@ -417,16 +431,28 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.appetizer-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appetizer-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .appetizer-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .appetizer-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
+    font-weight: 500;
 }
 
 .other-items-container-2 {
