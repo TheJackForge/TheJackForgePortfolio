@@ -100,7 +100,7 @@ const saladOptions = [
 
 const appetizerOptions = [
     {
-        type: 'Avacado Toast',
+        type: 'Avocado Toast',
         price: 6,
         ingredients: 'euismod in pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id aliquet risus feugiat in ante metus dictum at'
     },
@@ -308,7 +308,7 @@ function populateKidsMenu() {
         let kidsItem = document.createElement('div');
         kidsItem.classList.add('kids-item');
         kidsItem.innerHTML = `
-        <div class="type-price-div">
+        <div class="kids-type-price-div">
             <p>${kids.type}</p>
             <div class="kids-pricing">
             <span>${kids.price}</span>

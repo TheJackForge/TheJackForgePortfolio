@@ -547,19 +547,20 @@ a {
 }
 
 .kids-menu-header p:nth-of-type(1) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1rem;
+    font-weight: 500;
 }
 
 .kids-menu-header p:nth-of-type(2) {
     text-align: center;
     line-height: 2;
-    max-width: 60%;
-    font-size: 0.6rem;
+    max-width: 80%;
+    font-size: 0.8rem;
 }
 
 .kids-items-container {
-    width: 80%;
+    width: 90%;
 }
 
 .kids-item {
@@ -568,15 +569,26 @@ a {
     padding-bottom: 0.5rem;
 }
 
+.kids-type-price-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kids-type-price-div p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 .kids-pricing {
     display: flex;
     justify-content: flex-end;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .kids-item-ingredients p {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     max-width: 70%;
 }
 
@@ -592,6 +604,7 @@ a {
     font-size: 3rem;
     height: 150px;
     width: 100%;
+    font-weight: 600;
 }
 
 .specials-container-header p {
@@ -612,7 +625,7 @@ a {
     align-items: center;
     padding-top: 1.3rem;
     width: 50%;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-2-for-1.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -622,21 +635,22 @@ a {
 .special-1-container p {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 90%;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-1-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-1-container p:nth-of-type(2) {
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-1-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.5rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -647,7 +661,7 @@ a {
     align-items: center;
     padding-top: 1.3rem;
     width: 50%;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-02-drinks.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -657,44 +671,48 @@ a {
 .special-2-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 90%;
     font-size: 1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-2-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-2-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-2-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 1rem;
     text-align: center;
-    margin-top: 0.5rem;
 }
 
 .special-2-container p:nth-of-type(4) {
-    font-size: 0.3rem;
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
     text-align: center;
 }
 
 .special-2-container p:nth-of-type(5) {
-    font-size: 0.3rem;
+    font-size: 0.6rem;
     text-align: center;
-    margin: 0 2rem;
+}
+.special-2-container p:nth-of-type(6) {
+    font-size: 0.6rem;
+    text-align: center;
 }
 
 .special-3-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.3rem;
+    padding-top: 1.4rem;
     width: 50%;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-002-nachos.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -704,22 +722,23 @@ a {
 .special-3-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 90%;
     font-size: 1rem;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-3-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-3-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-3-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.7rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -728,9 +747,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.3rem;
+    padding-top: 1.4rem;
     width: 50%;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/specials-photo-01-date-night.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -740,22 +759,22 @@ a {
 .special-4-container p {
     margin: 0;
     padding: 0;
-    width: 60%;
-    font-size: 1rem;
+    width: 80%;
     text-align: center;
+    font-weight: 500;
 }
 
 .special-4-container p:nth-of-type(1) {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .special-4-container p:nth-of-type(2) {
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
 .special-4-container p:nth-of-type(3) {
-    font-size: 0.3rem;
+    font-size: 0.8rem;
     text-align: center;
     margin-top: 0.5rem;
 }
@@ -889,12 +908,13 @@ a {
     width: 100%;
     background-color: var(--secondary-color);
     padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .fireball-pizza-hours {
     width: 100%;
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .fireball-pizza-hours-header {
@@ -922,14 +942,15 @@ a {
 }
 
 .fireball-pizza-address {
-    width: 90%;
+    width: 40%;
     text-align: center;
 }
 
 .fireball-pizza-address-header {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: left;
     margin-top: 30px;
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -946,6 +967,7 @@ a {
 
 .fireball-pizza-address-content p {
     font-weight: 400;
+    width: 80%;
 }
 
 .fireball-pizza-address-content p:nth-of-type(1) {
@@ -958,14 +980,15 @@ a {
 }
 
 .fireball-pizza-contact {
-    width: 90%;
+    width: 40%;
     text-align: center;
 }
 
 .fireball-pizza-contact-header {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    text-align: left;
     margin-top: 30px;
     color: var(--primary-color);
     font-size: 1.2rem;
@@ -978,6 +1001,7 @@ a {
     text-align: left;
     font-size: 0.8rem;
     color: var(--primary-color);
+    width: 100%;
 }
 
 .fireball-pizza-contact-content p {
@@ -1561,7 +1585,6 @@ a {
     }
     
     .fireball-pizza-address-content {
-
         font-size: 0.8rem;
     }
     
