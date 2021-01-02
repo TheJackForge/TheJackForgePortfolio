@@ -925,7 +925,7 @@ a {
     font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
-    width: 40%;
+    /* width: 40%; */
 }
 
 .fireball-pizza-hours-content {
@@ -943,8 +943,9 @@ a {
 }
 
 .fireball-pizza-address {
-    width: 50%;
-    /* text-align: center; */
+    /* width: 40%; */
+    text-align: center;
+    padding-left: 20px;
 }
 
 .fireball-pizza-address-header {
@@ -957,6 +958,8 @@ a {
     font-size: 1.2rem;
     font-weight: 700;
     padding-bottom: 1rem;
+    width: 80%;
+    /* padding-left: 20px; */
 }
 
 .fireball-pizza-address-content {
