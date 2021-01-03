@@ -222,6 +222,8 @@ window.addEventListener('scroll', () => {
         floatingNavBar.classList.add('active');
         if (window.scrollY <= navListHeight) {
             floatingNavBar.classList.remove('active');
+        } else {
+            floatingNavBar.classList.add('active');
         }
 })
 
